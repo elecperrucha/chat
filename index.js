@@ -13,7 +13,17 @@ server.listen(port, function () {
 app.use(express.static('public'));
 
 // Chatroom
-
+const fs = require('fs') 
+  
+// Data which will write in a file. 
+let data = "Learning how to write in a file."
+  
+// Write data in 'Output.txt' . 
+fs.writeFile('Output.txt', data, (err) => { 
+      
+    // In case of a error throw err. 
+    if (err) throw err; 
+}) 
 var numUsers = 0;
 
 io.on('connection', function (socket) {

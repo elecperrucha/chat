@@ -231,7 +231,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Welcome to the exerras Chat";
+    var message = "Welcome to the public chat";
     log(message, {
       prepend: true
     });
