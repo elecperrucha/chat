@@ -1,4 +1,8 @@
 # Socket.IO Chat
+
+# I DON'T OWN THIS. THIS BELONGS TO THE ORIGINAL USER WHO MADE THE CHATBOX.
+
+
 A simple [chat demo](https://github.com/socketio/socket.io/tree/master/examples/chat) using the  [socket.io](http://socket.io/) real-time bidirectional event library for Node.js.
 
 Multiple users can join a chat room by each entering a unique username
