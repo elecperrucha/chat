@@ -49,7 +49,7 @@ ul {
 /* Login Page */
 
 .login.page {
-  background-color: #000;
+  background-color: black;
 }
 
 .login.page .form {
@@ -82,7 +82,7 @@ ul {
 }
 
 .login.page .title, .login.page .usernameInput {
-  color: #fff;
+  color: green;
   font-weight: 100;
 }
 
@@ -90,12 +90,14 @@ ul {
 
 .chat.page {
   display: none;
+  background-color: #000;
 }
 
 /* Font */
 
 .messages {
   font-size: 130%;
+  color: white;
 }
 
 .inputMessage {
@@ -103,7 +105,7 @@ ul {
 }
 
 .log {
-  color: black;
+  color: grey;
   font-size: 70%;
   margin: 5px;
   text-align: center;
@@ -124,7 +126,7 @@ ul {
 }
 
 .message.typing .messageBody {
-  color: black;
+  color: grey;
 }
 
 .username {
