@@ -231,7 +231,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Welcome to coke's chatbox!";
+    var message = "Welcome to Coke's chatbox!";
     log(message, {
       prepend: true
     });
