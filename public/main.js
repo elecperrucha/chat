@@ -30,9 +30,9 @@ $(function() {
   function addParticipantsMessage (data) {
     var message = '';
     if (data.numUsers === 1) {
-      message += "There's 1 participant";
+      message += "There's 1 participant.";
     } else {
-      message += "There are " + data.numUsers + " participants";
+      message += "There are " + data.numUsers + " participants.";
     }
     log(message);
   }
@@ -104,7 +104,7 @@ $(function() {
   // Adds the visual chat typing message
   function addChatTyping (data) {
     data.typing = true;
-    data.message = 'is s';
+    data.message = 'Is about to say something.';
     addChatMessage(data);
   }
 
@@ -231,7 +231,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Welcome to Coke's chatbox! This is like a mini Discord. Chat to friends here if you want! Play: obstar.io and dexamenes.surge.sh!";
+    var message = "Welcome to Coke's chatbox! This is like a mini Discord. Chat to friends, Also play: obstar.io (Currently broken) and dexamenes.surge.sh!";
     log(message, {
       prepend: true
     });
