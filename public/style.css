@@ -14,8 +14,8 @@ html, input {
     "HelveticaNeue-Light",
     "Helvetica Neue Light",
     "Helvetica Neue",
-    Helvetica,
-    Arial,
+    "Helvetica",
+    "Arial",
     "Arial",
     sans-serif;
 }
@@ -126,7 +126,7 @@ ul {
 }
 
 .message.typing .messageBody {
-  color: grey;
+  color: white;
 }
 
 .username {
@@ -141,11 +141,12 @@ ul {
 .inputMessage {
   border: 10px solid #000;
   bottom: 0;
-  height: 60px;
+  height: 50px;
   left: 0;
   outline: none;
   padding-left: 10px;
   position: absolute;
   right: 0;
   width: 100%;
+  background-color: #555;
 }

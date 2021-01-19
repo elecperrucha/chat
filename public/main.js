@@ -104,7 +104,7 @@ $(function() {
   // Adds the visual chat typing message
   function addChatTyping (data) {
     data.typing = true;
-    data.message = 'is starting to chat';
+    data.message = 'is s';
     addChatMessage(data);
   }
 
@@ -231,7 +231,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Welcome to Coke's chatbox!";
+    var message = "Welcome to Coke's chatbox! This is like a mini Discord. Chat to friends here if you want! Play: obstar.io and dexamenes.surge.sh!";
     log(message, {
       prepend: true
     });
