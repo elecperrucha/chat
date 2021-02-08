@@ -231,7 +231,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Welcome to Coke's chatbox! This is like a mini Discord. Chat to friends, Also play: obstar.io (Currently broken) and dexamenes.surge.sh!";
+    var message = "Welcome to Coke's chatbox! This is like a mini Discord. Chat to friends, Also play: obstar.io and dexamenes.surge.sh!";
     log(message, {
       prepend: true
     });
