@@ -4,7 +4,7 @@ $(function() {
   var FADE_TIME = 150; // ms
   var TYPING_TIMER_LENGTH = 900; // ms
   var COLORS = [
-    '#e21400', '#91580f', '#f8a700', '#f78b00',
+    '#e21400', '#91580f', '#f8a700', '#f78b00', '#ffffff',
     '#58dc00', '#287b00', '#a8f07a', '#4ae8c4',
     '#3b88eb', '#3824aa', '#a700ff', '#d300e7'
   ];
@@ -231,7 +231,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Welcome to Mini Discord! A smaller, fanmade version of Discord. Chat to friends, Also play: obstar.io and dexamenes.surge.sh!";
+    var message = "Welcome to the chat! Please be respectful towards others, and don't share your personal information. Have fun!";
     log(message, {
       prepend: true
     });
