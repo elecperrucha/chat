@@ -4,9 +4,9 @@ $(function() {
   var FADE_TIME = 150; // ms
   var TYPING_TIMER_LENGTH = 900; // ms
   var COLORS = [
-    '#ffa500', '#ffa500', '#ffa500', '#87ceeb', '#87ceeb',
-    '#ffa500', '#ffa500', '#ffa500', '#87ceeb', '#87ceeb',
-    '#ffa500', '#ff6347', '#ffa500', '#87ceeb', '#87ceeb'
+    '#e21400', '#91580f', '#f8a700', '#f78b00', '#ffffff',
+    '#58dc00', '#287b00', '#a8f07a', '#4ae8c4',
+    '#3b88eb', '#3824aa', '#a700ff', '#d300e7'
   ];
 
   // Initialize variables
@@ -104,7 +104,7 @@ $(function() {
   // Adds the visual chat typing message
   function addChatTyping (data) {
     data.typing = true;
-    data.message = 'Is typing something...';
+    data.message = 'Is about to say something.';
     addChatMessage(data);
   }
 
