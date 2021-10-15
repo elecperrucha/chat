@@ -1,5 +1,5 @@
 /* Fix user-agent */
-
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -10,14 +10,7 @@ html {
 }
 
 html, input {
-  font-family:
-    "HelveticaNeue-Light",
-    "Helvetica Neue Light",
-    "Helvetica Neue",
-    "Helvetica",
-    "Arial",
-    "Arial",
-    sans-serif;
+  font-family: "Hammersmith One", sans-serif;
 }
 
 html, body {
