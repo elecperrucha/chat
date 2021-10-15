@@ -231,7 +231,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Welcome to the chat! Please be respectful towards others, and don't share your personal information. Have fun!";
+    var message = "Wecome! Chat With Friends! Like Discord.";
     log(message, {
       prepend: true
     });
