@@ -30,7 +30,7 @@ $(function() {
   function addParticipantsMessage (data) {
     var message = '';
     if (data.numUsers === 1) {
-      message += "There's 1 participant. Looks Like Your Alone :(";
+      message += "There's 1 participant. Looks Like You're Alone :(";
     } else {
       message += "There are " + data.numUsers + " participants.";
     }
