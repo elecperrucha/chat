@@ -30,9 +30,9 @@ $(function() {
   function addParticipantsMessage (data) {
     var message = '';
     if (data.numUsers === 1) {
-      message += "There's 1 participant. Looks Like You're Alone :(";
+      message += "There's 1 user. Looks Like You're Alone :(";
     } else {
-      message += "There are " + data.numUsers + " participants.";
+      message += "There are " + data.numUsers + " users.";
     }
     log(message);
   }
@@ -104,7 +104,7 @@ $(function() {
   // Adds the visual chat typing message
   function addChatTyping (data) {
     data.typing = true;
-    data.message = 'Is about to say something.';
+    data.message = 'Is typing...';
     addChatMessage(data);
   }
 
