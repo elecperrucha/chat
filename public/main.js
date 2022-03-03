@@ -231,7 +231,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Tikcord IRC chat - #general";
+    var message = "Tikcord IRC chat - #LETS-GO-BEAR";
     log(message, {
       prepend: true
     });
