@@ -30,9 +30,9 @@ $(function() {
   function addParticipantsMessage (data) {
     var message = '';
     if (data.numUsers === 1) {
-      message += "There's 1 user. Looks Like You're Alone :(";
+      message += "No hay nadie.";
     } else {
-      message += "There are " + data.numUsers + " users.";
+      message += "Hay " + data.numUsers + " usuarios.";
     }
     log(message);
   }
@@ -104,7 +104,7 @@ $(function() {
   // Adds the visual chat typing message
   function addChatTyping (data) {
     data.typing = true;
-    data.message = 'Is typing...';
+    data.message = 'Esta escribiendo...';
     addChatMessage(data);
   }
 
@@ -231,7 +231,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Tikcord IRC chat - #LETS-GO-BEAR";
+    var message = "Chat en español";
     log(message, {
       prepend: true
     });
@@ -245,7 +245,7 @@ $(function() {
 
   // Whenever the server emits 'user joined', log it in the chat body
   socket.on('user joined', function (data) {
-    log(data.username + ' joined');
+    log(data.username + ' se unió');
     addParticipantsMessage(data);
   });
 
