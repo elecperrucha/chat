@@ -30,9 +30,9 @@ $(function() {
   function addParticipantsMessage (data) {
     var message = '';
     if (data.numUsers === 1) {
-      message += "No hay nadie.";
+      message += "There are 0 users.";
     } else {
-      message += "Hay " + data.numUsers + " usuarios.";
+      message += "There are " + data.numUsers + " users.";
     }
     log(message);
   }
@@ -104,7 +104,7 @@ $(function() {
   // Adds the visual chat typing message
   function addChatTyping (data) {
     data.typing = true;
-    data.message = 'Esta escribiendo...';
+    data.message = '...';
     addChatMessage(data);
   }
 
@@ -231,7 +231,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Chat en español";
+    var message = "Chat for multiuser sketchad";
     log(message, {
       prepend: true
     });
@@ -245,13 +245,13 @@ $(function() {
 
   // Whenever the server emits 'user joined', log it in the chat body
   socket.on('user joined', function (data) {
-    log(data.username + ' se unió');
+    log(data.username + ' Joined');
     addParticipantsMessage(data);
   });
 
   // Whenever the server emits 'user left', log it in the chat body
   socket.on('user left', function (data) {
-    log(data.username + ' se fue');
+    log(data.username + ' left');
     addParticipantsMessage(data);
     removeChatTyping(data);
   });
