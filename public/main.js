@@ -231,7 +231,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Chat for multiuser sketchad";
+    var message = "Chat";
     log(message, {
       prepend: true
     });
