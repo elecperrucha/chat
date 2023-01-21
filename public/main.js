@@ -30,7 +30,7 @@ $(function() {
   function addParticipantsMessage (data) {
     var message = '';
     if (data.numUsers === 1) {
-      message += "Hay 0 usuars.";
+      message += "Hay 0 usuarios.";
     } else {
       message += "Hay " + data.numUsers + " usuarios.";
     }
@@ -104,7 +104,7 @@ $(function() {
   // Adds the visual chat typing message
   function addChatTyping (data) {
     data.typing = true;
-    data.message = '...';
+    data.message = '.....';
     addChatMessage(data);
   }
 
